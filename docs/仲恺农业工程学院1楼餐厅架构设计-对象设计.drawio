@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="第 1 页" id="iVVyXWEKUKGOHrFc5Ong">
+    <mxGraphModel dx="976" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LGYccEi3aeuDsC9l3RiV-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;Object:餐盘&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;食物&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;重量传感器&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;餐勺&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;唯一标识（二维码）&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;RFID扫描管理器&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="60" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LGYccEi3aeuDsC9l3RiV-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;Object:用户&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;钱包（充值）&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;绑定钱包和餐盘&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;点餐（购物）&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;吃饭&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;解绑餐盘&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="60" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LGYccEi3aeuDsC9l3RiV-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;Object:食堂工作人员&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;异常处理&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;垃圾回收&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="60" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LGYccEi3aeuDsC9l3RiV-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;Object:餐盘托管处&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;[]餐盘&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;[]餐具&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="210" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LGYccEi3aeuDsC9l3RiV-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;Object:GC&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;餐盘处理&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;厨余垃圾处理&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="440" y="210" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="LGYccEi3aeuDsC9l3RiV-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;Object:汤锅&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;汤&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="210" width="160" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

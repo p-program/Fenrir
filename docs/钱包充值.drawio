@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="第 1 页" id="vwSF962P4Bb4hbFgKbpc">
+    <mxGraphModel dx="976" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SRvkCGnkCyYj90OShJg2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SRvkCGnkCyYj90OShJg2-1" target="SRvkCGnkCyYj90OShJg2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="345" y="10" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SRvkCGnkCyYj90OShJg2-3" target="SRvkCGnkCyYj90OShJg2-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-3" value="关联微信和手机号" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="221" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SRvkCGnkCyYj90OShJg2-4" target="SRvkCGnkCyYj90OShJg2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-4" value="创建账户（钱包）" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="122" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-9" value="充值钱包" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="322" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-11" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="420" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SRvkCGnkCyYj90OShJg2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.9;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SRvkCGnkCyYj90OShJg2-9" target="SRvkCGnkCyYj90OShJg2-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
