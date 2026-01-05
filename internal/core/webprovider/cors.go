@@ -3,8 +3,8 @@ package webprovider
 import (
 	cors "github.com/rs/cors/wrapper/gin"
 
-	"zeusro.com/hermes/internal/core/config"
-	"zeusro.com/hermes/internal/core/logprovider"
+	"github.com/p-program/Fenrir/internal/core/config"
+	"github.com/p-program/Fenrir/internal/core/logprovider"
 )
 
 type CorsMiddleware struct {

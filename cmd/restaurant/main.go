@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"zeusro.com/gotemplate/internal/config"
-	"zeusro.com/gotemplate/internal/handler"
-	"zeusro.com/gotemplate/internal/svc"
+	"github.com/p-program/Fenrir/internal/config"
+	"github.com/p-program/Fenrir/internal/handler"
+	"github.com/p-program/Fenrir/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

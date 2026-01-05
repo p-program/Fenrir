@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"zeusro.com/hermes/function/web"
+	"github.com/p-program/Fenrir/function/web"
 )
 
 type Translator interface {

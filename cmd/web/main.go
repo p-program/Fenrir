@@ -11,12 +11,12 @@ import (
 
 	"go.uber.org/fx"
 	"go.uber.org/fx/fxevent"
-	"zeusro.com/hermes/api"
-	"zeusro.com/hermes/internal/core"
-	"zeusro.com/hermes/internal/core/config"
-	"zeusro.com/hermes/internal/core/logprovider"
-	"zeusro.com/hermes/internal/core/webprovider"
-	"zeusro.com/hermes/internal/service"
+	"github.com/p-program/Fenrir/api"
+	"github.com/p-program/Fenrir/internal/core"
+	"github.com/p-program/Fenrir/internal/core/config"
+	"github.com/p-program/Fenrir/internal/core/logprovider"
+	"github.com/p-program/Fenrir/internal/core/webprovider"
+	"github.com/p-program/Fenrir/internal/service"
 )
 
 func main() {

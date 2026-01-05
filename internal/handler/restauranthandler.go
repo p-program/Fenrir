@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/p-program/Fenrir/internal/logic"
+	"github.com/p-program/Fenrir/internal/svc"
 	"github.com/zeromicro/go-zero/rest/httpx"
-	"zeusro.com/gotemplate/internal/logic"
-	"zeusro.com/gotemplate/internal/svc"
 )
 
 type RestaurantHandler struct {

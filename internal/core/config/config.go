@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/spf13/viper"
-	"zeusro.com/hermes/function/web/translate/model"
+	"github.com/p-program/Fenrir/function/web/translate/model"
 )
 
 var configPath string = ".config.yaml"

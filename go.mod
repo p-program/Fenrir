@@ -1,4 +1,4 @@
-module zeusro.com/hermes
+module github.com/p-program/Fenrir
 
 //为了方便调试而降低版本
 go 1.24

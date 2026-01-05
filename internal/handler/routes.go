@@ -3,8 +3,8 @@ package handler
 import (
 	"net/http"
 
+	"github.com/p-program/Fenrir/internal/svc"
 	"github.com/zeromicro/go-zero/rest"
-	"zeusro.com/gotemplate/internal/svc"
 )
 
 func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {

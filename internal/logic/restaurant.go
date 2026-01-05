@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/p-program/Fenrir/model"
 	"gorm.io/gorm"
-	"zeusro.com/gotemplate/model"
 )
 
 // RestaurantLogic 餐厅业务逻辑
