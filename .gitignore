@@ -25,3 +25,4 @@ app
 cmd/web/__debug_bin*
 .env
 bin/
+output/
