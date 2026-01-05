@@ -1,0 +1,203 @@
+syntax = "v1"
+
+info (
+	title: "智慧大学食堂 API"
+	desc: "基于 go-zero 的智慧食堂管理系统"
+	version: "1.0"
+)
+
+type (
+	// 通用响应
+	BaseResponse {
+		Code int    `json:"code"`
+		Msg  string `json:"msg"`
+	}
+
+	// 用户相关
+	UserInfo {
+		UserID   string  `json:"user_id"`
+		Username string  `json:"username,optional"`
+		Balance  float64 `json:"balance"`
+	}
+
+	// 钱包充值请求
+	WalletChargeRequest {
+		UserID string  `json:"user_id"`
+		Amount float64 `json:"amount"`
+	}
+
+	WalletChargeResponse {
+		BaseResponse
+		Data UserInfo `json:"data,optional"`
+	}
+
+	// 餐盘信息
+	PlateInfo {
+		PlateID      string  `json:"plate_id"`
+		QRCode       string  `json:"qr_code"`
+		RFIDTag      string  `json:"rfid_tag,optional"`
+		Weight       float64 `json:"weight,optional"`
+		IsBound      bool    `json:"is_bound"`
+		BoundUserID  string  `json:"bound_user_id,optional"`
+		BoundAt      string  `json:"bound_at,optional"`
+	}
+
+	// 绑定餐盘请求
+	BindPlateRequest {
+		UserID  string `json:"user_id"`
+		PlateID string `json:"plate_id"`
+	}
+
+	BindPlateResponse {
+		BaseResponse
+		Data PlateInfo `json:"data,optional"`
+	}
+
+	// 解绑餐盘请求
+	UnbindPlateRequest {
+		UserID  string `json:"user_id"`
+		PlateID string `json:"plate_id"`
+	}
+
+	UnbindPlateResponse {
+		BaseResponse
+	}
+
+	// 食物信息
+	FoodInfo {
+		FoodID string  `json:"food_id"`
+		Name   string  `json:"name"`
+		Price  float64 `json:"price"`
+		Weight float64 `json:"weight,optional"`
+	}
+
+	// 点餐请求
+	OrderRequest {
+		UserID  string             `json:"user_id"`
+		PlateID string             `json:"plate_id"`
+		Foods   []OrderFoodRequest `json:"foods"`
+	}
+
+	OrderFoodRequest {
+		FoodID string  `json:"food_id"`
+		Weight float64 `json:"weight,optional"`
+	}
+
+	// 订单信息
+	OrderInfo {
+		OrderID   string     `json:"order_id"`
+		UserID    string     `json:"user_id"`
+		PlateID   string     `json:"plate_id"`
+		Foods     []FoodInfo `json:"foods"`
+		TotalPrice float64   `json:"total_price"`
+		Status    string     `json:"status"`
+		CreatedAt string     `json:"created_at"`
+	}
+
+	OrderResponse {
+		BaseResponse
+		Data OrderInfo `json:"data,optional"`
+	}
+
+	// 餐盘托管处
+	PlateDepotInfo {
+		DepotID   string      `json:"depot_id"`
+		PlateList []PlateInfo `json:"plate_list"`
+		Capacity  int         `json:"capacity"`
+		Available int         `json:"available"`
+	}
+
+	PlateDepotResponse {
+		BaseResponse
+		Data PlateDepotInfo `json:"data,optional"`
+	}
+
+	// 获取餐盘列表
+	PlateListResponse {
+		BaseResponse
+		Data []PlateInfo `json:"data,optional"`
+	}
+
+	// 获取用户订单列表
+	UserOrderListRequest {
+		UserID string `json:"user_id"`
+		Page   int    `json:"page,optional,default=1"`
+		PageSize int `json:"page_size,optional,default=10"`
+	}
+
+	OrderListResponse {
+		BaseResponse
+		Data []OrderInfo `json:"data,optional"`
+		Total int        `json:"total"`
+	}
+
+	// 工作人员异常处理
+	WorkerExceptionRequest {
+		WorkerID  string `json:"worker_id"`
+		PlateID   string `json:"plate_id,optional"`
+		Exception string `json:"exception"`
+		Action    string `json:"action"`
+	}
+
+	WorkerExceptionResponse {
+		BaseResponse
+	}
+
+	// GC 处理请求
+	GCProcessRequest {
+		PlateID string `json:"plate_id"`
+		Type    string `json:"type"` // "plate" or "food_waste"
+	}
+
+	GCProcessResponse {
+		BaseResponse
+	}
+)
+
+service restaurant-api {
+	@handler HealthCheck
+	get /api/health returns (BaseResponse)
+
+	// 用户相关
+	@handler WalletCharge
+	post /api/wallet/charge (WalletChargeRequest) returns (WalletChargeResponse)
+
+	@handler GetUserInfo
+	get /api/user/info/:user_id returns (BaseResponse)
+
+	// 餐盘相关
+	@handler BindPlate
+	post /api/plate/bind (BindPlateRequest) returns (BindPlateResponse)
+
+	@handler UnbindPlate
+	post /api/plate/unbind (UnbindPlateRequest) returns (UnbindPlateResponse)
+
+	@handler GetPlateInfo
+	get /api/plate/info/:plate_id returns (BaseResponse)
+
+	@handler GetPlateList
+	get /api/plate/list returns (PlateListResponse)
+
+	// 点餐相关
+	@handler CreateOrder
+	post /api/order/create (OrderRequest) returns (OrderResponse)
+
+	@handler GetUserOrders
+	post /api/order/list (UserOrderListRequest) returns (OrderListResponse)
+
+	@handler GetOrderInfo
+	get /api/order/info/:order_id returns (BaseResponse)
+
+	// 餐盘托管处
+	@handler GetPlateDepot
+	get /api/depot/info/:depot_id returns (PlateDepotResponse)
+
+	// 工作人员
+	@handler HandleException
+	post /api/worker/exception (WorkerExceptionRequest) returns (WorkerExceptionResponse)
+
+	// GC 处理
+	@handler ProcessGC
+	post /api/gc/process (GCProcessRequest) returns (GCProcessResponse)
+}
+

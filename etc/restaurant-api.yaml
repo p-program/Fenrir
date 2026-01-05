@@ -1,0 +1,19 @@
+Name: restaurant-api
+Host: 0.0.0.0
+Port: 8888
+
+# 数据库配置
+Database:
+  Type: sqlite
+  DSN: restaurant.db
+
+# 日志配置
+Log:
+  ServiceName: restaurant-api
+  Mode: file
+  Path: logs
+  Level: info
+  Compress: true
+  KeepDays: 7
+  StackCooldownMillis: 100
+
