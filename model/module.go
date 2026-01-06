@@ -1,6 +1,10 @@
 package model
 
-<<<<<<< HEAD
+import (
+	"net/http"
+	"time"
+)
+
 // 此文件保留原有的业务逻辑方法定义
 // 数据模型定义已迁移到 model/restaurant.go
 
@@ -52,11 +56,7 @@ func (u *User) Charge(money float64) *Food {
 // Charge 钱包充值（业务方法）
 func (w *Wallet) Charge(money float64) {
 	w.Balance += money
-=======
-import (
-	"net/http"
-	"time"
-)
+}
 
 type APIResponse struct {
 	Cost    time.Duration `json:"cost,omitempty"`  // 处理耗时
@@ -97,5 +97,4 @@ type Language struct {
 type Location struct {
 	Latitude  float64 // 纬度
 	Longitude float64 // 经度
->>>>>>> a7296d2cb00d2e22487a050ca1016ebd33bcb0db
 }
